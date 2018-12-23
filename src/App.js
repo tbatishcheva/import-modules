@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import one, { two } from './some-object';
+import one, { two } from './someObject';
 
 class App extends Component {
   render() {
@@ -8,8 +8,8 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <div>
-            {one.b}
             {one.a}
+            {one.b}
             {two.c}
           </div>
         </header>
