@@ -3,14 +3,23 @@ import './App.css';
 import one, { two } from './someObject';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      one,
+      two,
+    };
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <div>
-            {one.a}
-            {one.b}
-            {two.c}
+            {this.state.one.a}
+            {this.state.one.b}
+            {this.state.two.c}
           </div>
         </header>
       </div>
